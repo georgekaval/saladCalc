@@ -9,3 +9,6 @@ button {
   and (orientation: landscape) {
 
 }
+.section {
+  margin-top: 0px;
+}
