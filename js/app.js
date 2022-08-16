@@ -88,6 +88,13 @@ $(() => {
     displayToppings()
     total = 0
   })
+  $( ".Greens" ).click(function() {
+    addToppingsPrice()
+    currentSaladNames.push(this.name)
+    displayTotal()
+    displayToppings()
+    total = 0
+  })
   $( ".sectionA" ).click(function() {
     addSectionAPrice()
     addToppingsPrice()
@@ -130,6 +137,13 @@ $(() => {
   })
   $( "#extraDressing" ).click(function() {
     addDressingPrice()
+    addToppingsPrice()
+    currentSaladNames.push(this.name)
+    displayTotal()
+    displayToppings()
+    total = 0
+  })
+  $( ".Dressing" ).click(function() {
     addToppingsPrice()
     currentSaladNames.push(this.name)
     displayTotal()
